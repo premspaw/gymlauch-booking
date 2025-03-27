@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Class Booking - Instructor</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Gym Class Booking Portal</h1>
+        
+        <div class="form-section">
+            <h2>Create New Class</h2>
+            <form id="classForm">
+                <div class="form-group">
+                    <label for="className">Class Name:</label>
+                    <select id="className" required>
+                        <option value="">Select a class</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="instructorName">Instructor Name:</label>
+                    <select id="instructorName" required>
+                        <option value="">Select an instructor</option>
+                    </select>
+                </div>
+                <div class="form-group date-time-group">
+                    <label>Date and Time:</label>
+                    <div class="date-time-inputs">
+                        <div class="date-input">
+                            <input type="date" id="date" required>
+                        </div>
+                        <div class="time-input">
+                            <input type="time" id="time" required>
+                        </div>
+                        <button type="button" id="resetDateTime" class="reset-button">Reset</button>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="duration">Duration (minutes):</label>
+                    <select id="duration" required>
+                        <option value="">Select duration</option>
+                        <option value="30">30 minutes</option>
+                        <option value="45">45 minutes</option>
+                        <option value="60">60 minutes</option>
+                        <option value="75">75 minutes</option>
+                        <option value="90">90 minutes</option>
+                        <option value="120">120 minutes</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="seats">Number of Seats:</label>
+                    <input type="number" id="seats" min="10" value="10" required>
+                </div>
+                <button type="submit">Create Class</button>
+            </form>
+            <div id="message"></div>
+        </div>
+
+        <div class="created-classes">
+            <h2>Created Classes</h2>
+            <div id="createdClassesList" class="created-classes-list">
+                <!-- Created classes will be displayed here -->
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/instructor.js"></script>
+</body>
+</html> 
