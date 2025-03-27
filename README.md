@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Gym Booking Portal
 
 A modern web application for managing gym class bookings. This application allows instructors to create and manage fitness classes, while users can view and book available spots.
@@ -121,3 +122,6 @@ cd gym-booking-portal
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details. 
+=======
+# gymlauch-booking
+>>>>>>> 8aa1b5022df056f7f9122513d969562d3b495421
